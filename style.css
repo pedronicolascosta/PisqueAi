@@ -189,7 +189,7 @@
 body{
     color: white;
     background-color: #101010;
-    overflow: hidden; /* Hide scrollbars */
+    overflow-x: hidden;
 }
 
 .home{
