@@ -144,6 +144,7 @@
       justify-content: space-around;
       transform: translateX(100%);
       transition: transform 0.3s ease-in;
+      
     }
     .nav-list li {
       margin-left: 0;
@@ -187,7 +188,8 @@
 
 body{
     color: white;
-    background-color: #101010;;
+    background-color: #101010;
+    overflow: hidden; /* Hide scrollbars */
 }
 
 .home{
