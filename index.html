@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light">
     <title>PisqueAi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,13 +13,13 @@
     <nav>
       <ul class="sidebar">
         <!-- <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li> -->
-        <li><a href="#">Sobre</a></li>
+        <li><a href="index.html#sobre">Sobre</a></li>
         <li><a href="#">Trajetória</a></li>
         <li><a href="#" class="border-contato">Contato</a></li>
       </ul>
       <ul>
         <li class="line typing-animation"><a href="#" class="logo">Pisque_Ai</a></li>
-        <li class="hideOnMobile"><a href="#">Sobre</a></li>
+        <li class="hideOnMobile"><a href="index.html#sobre">Sobre</a></li>
         <li class="hideOnMobile"><a href="#">Trajetória</a></li>
         <li class="hideOnMobile"><a href="#" class="border-contato">Contato</a></li>
         <!-- <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li> -->
@@ -35,7 +36,7 @@
   <main>
     <section class="home">
         <div class="home-text">
-            <h1 class="text-h1"><b class="titulo">Pisque_Aí</b>, o software para escrever com os olhos.</h1>
+            <h1 class="text-h1"><b class="titulo">Pisque_Ai</b>, o software para escrever com os olhos.</h1>
             <p>O que começou como um projeto de pesquisa escolar, o Pisque Aí hoje é uma ferramenta capaz de  permitir que pessoas portadoras de Esclerose Lateral Amiotrófica consigam se comunicar com o movimento ocular.</p>
             <a href="#" class="home-btn">Saiba como funciona</a>
         </div>
@@ -43,7 +44,102 @@
             <img src="img/home1.png" alt="hamburguer">
         </div>
     </section>
+
+    <section class="sobre" id="sobre">
+      <h1 class="titulo-sobre">Sobre</h1>
+      <div class="interface">
+
+        <div class="flex">
+          <div class="img-sobre">
+            <img src="img/gian.png" alt="">
+          </div><!--img-sobre-->
+
+          <div class="txt-sobre">
+            <h2>Como é o<span>projeto?</span></h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At accusantium ducimus dicta suscipit, neque cumque sunt tenetur totam delectus magnam minus ratione. Quidem sequi velit voluptatibus eos omnis ullam officiis.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam quidem quae iusto repellendus eaque, ipsum sed voluptate explicabo voluptas, dolorum porro sequi laudantium? Obcaecati quae, dolores illo officiis a numquam.</p>
+          </div><!--txt-sobre-->
+        </div><!--flex-->
+
+        <div class="flex flex2">
+          <div class="txt-sobre">
+            <h2>Como é a <span>doença?</span></h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At accusantium ducimus dicta suscipit, neque cumque sunt tenetur totam delectus magnam minus ratione. Quidem sequi velit voluptatibus eos omnis ullam officiis.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam quidem quae iusto repellendus eaque, ipsum sed voluptate explicabo voluptas, dolorum porro sequi laudantium? Obcaecati quae, dolores illo officiis a numquam.</p>
+          </div><!--txt-sobre-->
+
+          <div class="img-sobre">
+              <img src="img/grupo.jpg" alt="">
+          </div><!--img-sobre-->
+
+        </div><!--flex-->
+
+        <div class="flex flex2">
+          <div class="img-sobre">
+              <img src="img/grupo.jpg" alt="">
+          </div><!--img-sobre-->
+
+          <div class="txt-sobre">
+            <h2>Por que o foco em <span>ELA?</span></h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At accusantium ducimus dicta suscipit, neque cumque sunt tenetur totam delectus magnam minus ratione. Quidem sequi velit voluptatibus eos omnis ullam officiis.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam quidem quae iusto repellendus eaque, ipsum sed voluptate explicabo voluptas, dolorum porro sequi laudantium? Obcaecati quae, dolores illo officiis a numquam.</p>
+          </div><!--txt-sobre-->
+
+        </div><!--flex-->
+
+      </div><!--interface-->
+    </section><!--sobre-->
+
+    <section class="quemsomos">
+      <h1 class="titulo-sobre">Quem somos?</h1>
+
+    </section>
+
   </main>
-    <script src="mobile-navbar.js"></script>
+  <footer>
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <div class="line typing-animation"><a href="#" class="logo">Pisque_Ai</a></div>
+            <p>A ferramenta para escrever com os olhos.</p>
+
+            <div id="footer_social_media">
+                <a href="#" class="footer-link" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        
+        <ul class="footer-list">
+            <li>
+                <h3>Navegação</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Trajetória</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Contato</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="footer_copyright">
+        &#169
+        2024 all rights reserved
+    </div>
+  </footer>
+
+  <script src="mobile-navbar.js"></script>
+
 </body>
 </html>
