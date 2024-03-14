@@ -260,7 +260,7 @@ body{
     width: 100%;
     padding: 0.5rem;
 }
-@media (max-width:785px) {
+@media (max-width:800px) {
     /*main*/
     .home{
         padding: 100px 2%;
@@ -285,7 +285,7 @@ body{
 
 /* ESTILO DO SOBRE */
 .titulo-sobre{
-  font-size: 2.8rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
   line-height: 4rem;
   background: linear-gradient(90deg, rgba(104, 221, 189, 1) 0%, rgba(3, 133, 84, 1) 100%);
@@ -297,13 +297,17 @@ body{
   text-transform: uppercase;
   letter-spacing: 4px;
   text-align: center;
-  padding-bottom: 4rem;
   
 }
+
 
 .flex {
   display: flex;
   padding: 0px 10%;
+}
+
+ .primeiro{
+  padding-top: 4rem;
 }
 
 section.sobre {
@@ -376,6 +380,184 @@ section.sobre .flex {
 
 
 }
+
+
+/* QUEM SOMOS  */
+
+.team{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: radial-gradient(#038554,#0f051d);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.team-content{
+	width: 100%;
+	max-width: 1350px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+	align-items: center;
+	gap: 2rem;
+	text-align: center;
+	margin-top: 4rem;
+}
+.team-content img{
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+	margin-bottom: 15px;
+}
+.center h1{
+	color: #fff;
+	font-size: 4rem;
+	text-align: center;
+}
+
+.center h2{
+  color: #fff;
+	text-align: center;
+}
+.box{
+	padding: 16px;
+	/* background: #1b1229; */
+  background:rgba(5, 5, 5, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(104, 221, 189, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur( 13.5px );
+	border-radius: 15px;
+	transition: all .38s ease;
+}
+.box h3{
+	font-size: 23px;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 8px;
+}
+.box h5{
+	font-size: 15px;
+	font-weight: 600;
+	color: #b7b4bb;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+}
+.icons i{
+	display: inline-block;
+	color: #fff;
+	font-size: 20px;
+	margin: 0 8px;
+	transition: all .38s ease;
+}
+.icons i:hover{
+	transform: scale(1.2);
+}
+.box:hover{
+	transform: translateY(-10px);
+	cursor: pointer;
+}
+
+@media(max-width: 800px){
+	.team{
+		width: 100%;
+		height: auto;
+		padding: 90px 2%;
+	}
+	.center h1{
+		font-size: 3.2rem;
+
+  }
+  .patrocinadores h1{
+    font-size: 2rem;
+	}
+}
+
+
+/* PATROCINADORES */
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: rgba(23, 23, 23, 0);
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(3, 133, 84, 0), #17171700, );
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgb(3, 133, 84, 0), #17171700, );
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
+
+.patrocinadores{
+  padding-top: 4rem;
+}
+
+.entre-em-contato{
+  color: #fff;
+	text-align: center;
+  margin-bottom: 3rem;
+}
+
+.entrecontato{
+  margin: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
