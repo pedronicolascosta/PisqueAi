@@ -385,7 +385,7 @@ section.sobre .flex {
 /* QUEM SOMOS  */
 
 .team{
-	position: relative;
+	/* position: relative; */
 	width: 100%;
 	height: 100vh;
 	background: radial-gradient(#038554,#0f051d);
@@ -543,6 +543,128 @@ section.sobre .flex {
 }
 
 
+/* PAGINA DE CONTATO ----- CONTATO.HTML */
+
+
+
+
+.form {
+  width: 100%;
+  max-width: 32rem;
+  font-size: 1.125rem;
+
+  background:rgba(5, 5, 5, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(104, 221, 189, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur( 13.5px );
+  border-radius:1.5rem ;
+
+  padding: 3rem;
+
+  margin-top: 2rem;
+
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button {
+  display: block;
+  width: 100%;
+}
+
+.form label {
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.form input,
+.form textarea {
+  font-family: "Montserrat", sans-serif;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius:1.5rem ;
+  transition: border-color, box-shadow 0.2s;
+}
+
+.form textarea {
+  min-height: 13rem;
+  resize: vertical;
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+  outline: none;
+  border-color: #03bb85;
+  box-shadow: 0 0 0 3px #03bb85;
+}
+
+.form button {
+  display: block;
+  padding: 1rem;
+  
+  background:rgba(5, 5, 5, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(104, 221, 189, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur( 13.5px );
+  border-radius: 10px;
+
+  color: #fff;
+  font: inherit;
+  text-transform: uppercase;
+  border: none;
+  border-radius:1.5rem ;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form button:hover,
+.form button:focus {
+  outline: none;
+  background: #03bb85;
+}
+
+/* PAGINA OBRIGADO.HTML */
+
+.obrigado{
+  color: #fff;
+	text-align: center;
+}
+
+.obrigado{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10%;
+}
+
+
+
+
+@media (max-width:800px) {
+  /*main*/
+  .obrigado{
+      padding: 100px 2%;
+      flex-direction: column;
+      text-align: center;
+      overflow: hidden;
+      gap: 5rem;
+  }
+
+  .obrigado .text-h1{
+      font-size: 2.5rem;
+      line-height: 3rem;
+  }
+  .obrigado p{
+      font-size: 15px;
+  }
+}
 
 
 
