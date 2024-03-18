@@ -412,6 +412,17 @@ section.sobre .flex {
 }
 
 
+/* TRAJETORIA */
+
+.link-texto{
+  color:#03bb85 ;
+  letter-spacing: 4px;
+}
+
+.trajetoria-espaco{
+  padding-top: 3rem; 
+}
+
 /* QUEM SOMOS  */
 
 .team{
@@ -575,7 +586,10 @@ section.sobre .flex {
 
 /* PAGINA DE CONTATO ----- CONTATO.HTML */
 
-
+.contato-espaco{
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+}
 
 
 .form {
