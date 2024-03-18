@@ -3,6 +3,7 @@ class MobileNavbar {
     this.mobileMenu = document.querySelector(mobileMenu);
     this.sidebar = document.querySelector('.sidebar');
     this.activeClass = "active";
+    this.navLinks = document.querySelectorAll('.sidebar li');
 
     this.handleClick = this.handleClick.bind(this);
     this.handleOutsideClick = this.handleOutsideClick.bind(this);
@@ -19,9 +20,18 @@ class MobileNavbar {
   }
 
   handleClick() {
+    const nav = document.querySelector('nav');
+    
     this.mobileMenu.classList.toggle(this.activeClass);
     this.sidebar.style.display = this.mobileMenu.classList.contains(this.activeClass) ? 'flex' : 'none'; // Toggle display based on activeClass
     this.animateLinks();
+    
+    // Verifica se a barra lateral está visível
+    if (this.sidebar.style.display === 'flex') {
+      nav.classList.add('sidebar-open'); // Desativa o backdrop-filter
+    } else {
+      nav.classList.remove('sidebar-open'); // Ativa o backdrop-filter
+    }
   }
 
   handleOutsideClick(event) {
@@ -49,8 +59,6 @@ const mobileNavbar = new MobileNavbar(
   ".mobile-menu",
 );
 mobileNavbar.init();
-
-
 
 var copy = document.querySelector(".logos-slide").cloneNode(true);
 document.querySelector(".logos").appendChild(copy);

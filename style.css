@@ -70,6 +70,10 @@ a.logo{
   }
 }
 
+nav.sidebar-open {
+  backdrop-filter: none;
+}
+
 
 nav{
   display: flex;
